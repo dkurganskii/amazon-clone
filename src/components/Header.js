@@ -24,6 +24,23 @@ function Header() {
                     <input className='p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4' type="text" />
                     <SearchIcon className='h-12 p-4' />
                 </div>
+
+                <div className='text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap'>
+                    <div className='link'>
+                        <p>Hello DK</p>
+                        <p className='font-extrabold md:text-sm'>Account & Lists</p>
+                    </div>
+    
+                    <div className='link'>
+                        <p>Returns</p>
+                        <p className='font-extrabold md:text-sm'>& Orders</p>
+                    </div>
+
+                    <div className='link relative flex items-center'>
+                        <ShoppingCartIcon className='h-10' />
+                        <p className='font-extrabold md:text-sm'>Basket</p>
+                    </div>
+                </div>
             </div>
 
             <div> </div>
