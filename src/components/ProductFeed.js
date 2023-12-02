@@ -5,7 +5,7 @@ function ProductFeed({ products }) {
     return (
         <div>
             <h1>Products here...</h1>
-            {products.map(({id, title, description, category, image}) => (
+            {products.map(({id, title, description, category, image, price}) => (
                 <Product 
                 key={id}
                 id={id} 
@@ -13,6 +13,7 @@ function ProductFeed({ products }) {
                 description={description} 
                 category={category} 
                 image={image}
+                price={price}
                 />
             ))}
         </div>
