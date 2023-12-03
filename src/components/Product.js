@@ -41,7 +41,7 @@ function Product({ id, title, description, category, image, price }) {
                 </div>
             )}
 
-            <button className='mt-auto'>Add to Cart</button>
+            <button className='mt-auto button'>Add to Cart</button>
         </div>
 
     )
