@@ -5,6 +5,7 @@ import {
     SearchIcon,
     ShoppingCartIcon
 } from "@heroicons/react/outline";
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 function Header() {
     return (
@@ -26,27 +27,27 @@ function Header() {
                 </div>
 
                 <div className='text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap'>
-                    <div className='link'>
+                    <div onClick={signIn} className='link'>
                         <p>Hello DK</p>
-                        <p className='font-extrabold md:text-sm'>Account & Lists</p>
+                        <p className='font-extrabold md:text-sm'>Account & Lists</p>
                     </div>
-    
+
                     <div className='link'>
                         <p>Returns</p>
-                        <p className='font-extrabold md:text-sm'>& Orders</p>
+                        <p className='font-extrabold md:text-sm'>& Orders</p>
                     </div>
 
                     <div className='link relative flex items-center'>
                         <span className='absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>0</span>
                         <ShoppingCartIcon className='h-10' />
-                        <p className='hidden md:inline font-extrabold md:text-sm mt-2'>Cart</p>
+                        <p className='hidden md:inline font-extrabold md:text-sm mt-2'>Cart</p>
                     </div>
                 </div>
             </div>
 
-            <div className='flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm'> 
+            <div className='flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm'>
                 <p className='link flex items-center'>
-                    <MenuIcon className='h-6 mr-1'/>
+                    <MenuIcon className='h-6 mr-1' />
                     All
                 </p>
                 <p className='link'>Prime Video</p>
